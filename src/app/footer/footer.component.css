@@ -1,0 +1,115 @@
+
+
+
+
+.contact-me {
+  width: 100%;
+  height: 68vh;
+  position: relative;
+  background-color: rgb(8,12,47) ;
+  padding-top: 90px;
+  color: white !important;
+}
+
+
+
+.contact-me .ball-1 {
+  right: 300px;
+}
+
+.contact-me .big-ball-2 {
+  right: 200px;
+  top: 180px;
+}
+
+.contact-me .ball-4 {
+  top: 200px;
+  right: 100px;
+}
+
+.contact-me .img-fluid {
+  width: 30%;
+  height: auto;
+  cursor: pointer;
+
+}
+
+
+.contact-me .social-icon-info {
+  width: 100%;
+  height: auto;
+  margin-top: 50px !important;
+
+
+}
+
+.contact-me .social-icon-info ul {
+  display: flex;
+  list-style-type: none;
+  width: 40%;
+  height: auto;
+
+  margin: auto;
+}
+
+.contact-me .social-icon-info ul li {
+  text-decoration: none;
+}
+
+.contact-me .social-icon-info ul li a {
+  padding: 10px ;
+  text-align: center;
+  font-size: 30px;
+  color: #006eff !important;
+  margin-left: 30px;
+
+}
+
+
+.contact-me h3 {
+
+  margin-top: 20px;
+  font-size: 20px;
+  /* color: #006eff !important ; */
+  color: white !important ;
+  padding-bottom: 50px;
+}
+
+@media (max-width : 767px) {
+
+  .contact-me {
+    height: 53vh;
+  }
+
+  .contact-me .img-fluid {
+      width: 80%;
+  }
+  .contact-me .social-icon-info ul {
+      width: 100%;
+      height: auto;
+  }
+  .contact-me .social-icon-info ul li a {
+      margin-left: 10px;
+  }
+}
+
+
+
+@media (min-width : 768px) and (max-width : 1023px) {
+
+
+  .contact-me {
+    height: 45vh;
+  }
+
+  .contact-me .img-fluid {
+      width: 80%;
+  }
+  .contact-me .social-icon-info ul {
+      width: 100%;
+      height: auto;
+  }
+  .contact-me .social-icon-info ul li a {
+      margin-left: 60px;
+  }
+}

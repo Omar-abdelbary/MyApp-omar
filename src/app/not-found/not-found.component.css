@@ -1,0 +1,50 @@
+
+.not-found {
+  margin-top: 72px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 20px;
+
+}
+
+.not-found .img-fluid {
+  width: 65%;
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+
+}
+
+.not-found h3 {
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-decoration: underline;
+  margin-top: 25px;
+
+}
+
+
+@media (max-width : 767px) {
+
+
+  .not-found .img-fluid {
+    width: 100%;
+    height: auto;
+
+  }
+
+}
+
+
+@media (min-width : 768px) and (max-width : 1023px) {
+
+  .not-found .img-fluid {
+    width: 100%;
+    height: auto;
+
+  }
+
+}

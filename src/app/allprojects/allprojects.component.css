@@ -1,0 +1,211 @@
+
+
+
+
+
+
+
+.projects {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #050823;
+  padding-bottom: 60px;
+
+  padding-top: 90px;
+  margin-top: 90px;
+
+}
+
+
+.projects .light-3 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  overflow-x: clip;
+}
+
+.light-3::after {
+  content: '';
+  width: 350px;
+  height: 500px;
+  position: absolute;
+  background-color: #009bff;
+  filter: blur(150px);
+  border-radius: 50%;
+}
+
+
+.projects .light-3::after {
+  left: -290px;
+  top: -293px;
+}
+
+
+
+.projects h3 {
+  margin: auto;
+  border: 2px solid #006eff;
+  padding: 10px 20px;
+  font-size: 30px;
+  width: fit-content;
+  position: relative;
+  z-index: 1;
+  transition: 1s;
+  color: #fff;
+}
+
+
+.projects h3::before,
+.projects h3::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background-color: #009bff;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 1s;
+}
+
+.projects h3::before {
+  left: -30px;
+}
+
+.projects h3::after {
+  right: -30px;
+}
+
+.projects h3:hover::before {
+  z-index: -1;
+  animation: left-move 1s linear forwards;
+  transition: 1s;
+}
+.projects h3:hover::after {
+  z-index: -1;
+  animation: right-move 1s linear forwards;
+  transition: 1s;
+
+}
+
+
+@keyframes left-move {
+  50% {
+  left: 0;
+  width: 12px;
+  height: 12px;
+  transition: 1s;
+}
+
+  100% {
+  left: 0;
+  border-radius: 0;
+  width: 50%;
+  height: 100%;
+  transition: 1s;
+
+}
+
+}
+
+@keyframes right-move {
+  50% {
+  right: 0;
+  width: 12px;
+  height: 12px;
+  transition: 1s;
+
+}
+
+  100% {
+  right: 0;
+  border-radius: 0;
+  width: 50%;
+  height: 100%;
+  transition: 1s;
+
+}
+
+}
+
+
+.projects .projects-info {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.projects .projects-info .img-info {
+  width: 100%;
+  height: auto;
+  background-color: #006eff;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects .projects-info .img-info:hover .icon-info {
+  bottom: 25px;
+  transition: 1s;
+}
+
+.projects .projects-info .img-info .img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.projects .projects-info .icon-info {
+
+  position: absolute;
+  bottom: -200px;
+  left: 100px;
+  transition: 1s;
+
+}
+
+.projects .projects-info .icon-info a {
+  color: #050823;
+  background-color: #8084dc;
+  font-size: 25px;
+  margin: 0px 10px;
+  padding: 10px;
+  border-radius: 50px;
+
+}
+
+.projects .projects-info .icon-info a:hover {
+  text-decoration: none;
+
+}
+
+
+
+
+
+
+
+@media (max-width :767px) {
+
+  .projects {
+    padding-top: 40px;
+  }
+  .projects .projects-info .img-info {
+      margin-bottom: 20px;
+  }
+
+
+
+}
+
+
+
+
+
+@media (min-width : 768px) and (max-width : 1023px) {
+  .projects .projects-info .img-info {
+      margin-bottom: 20px;
+  }
+}
